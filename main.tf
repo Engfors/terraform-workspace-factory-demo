@@ -18,7 +18,7 @@ module "demo_workspaces" {
       tf_version            = var.tf_version
       queue_all_runs        = false
       identifier            = each.value.vcs_repo
-      branch                = "main"
+      branch                = ""
       ingress_submodules    = false
       oauth_token_id        = var.github_oauth_token_id
     }
